@@ -15,7 +15,7 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 In the root of your repository (created with `zola init`) run:
 
 ```bash
-git submodule add https://github.com/vimpostor/zola-aurora themes/zola-aurora
+git submodule add https://github.com/vimpostor/zola-aurora.git themes/zola-aurora
 ```
 
 Then add `theme = "zola-aurora"` to your `config.toml`.
