@@ -1,0 +1,4 @@
+name = "zola-aurora"
+description = "Minimalistic blog theme with no JS"
+license = "MIT"
+homepage = "https://github.com/vimpostor/zola-aurora"
