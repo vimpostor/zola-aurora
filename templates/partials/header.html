@@ -1,0 +1,36 @@
+{% import "macros/macros.html" as post_macros %}
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	{# Site title #}
+	{% set current_path = current_path | default(value="/") %}
+	{% if current_path == "/" %}
+	<title>
+		{{ config.title | default(value="Home") }}
+	</title>
+	{% else %}
+	<title>
+		{{ page.title | default(value=config.title) | default(value="Post") }}
+	</title>
+	{% endif %}
+
+	{# Favicon #}
+	{% if config.extra.favicon %}
+		<link rel="icon" type="image/png" href={{ config.extra.favicon }} />
+	{% endif %}
+
+	{# Fonts #}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/iosevka@4.5.4/500.min.css">
+
+	{# RSS #}
+	<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+
+	{# Theme #}
+	<link rel="stylesheet" type="text/css" href="{{ get_url(path="theme/light.css") }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ get_url(path="theme/dark.css") }}" media="(prefers-color-scheme: dark)"/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
+</head>

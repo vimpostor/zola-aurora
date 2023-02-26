@@ -1,0 +1,34 @@
+code {
+	background-color: var(--bg-1);
+	padding: 0.1em 0.2em;
+	border-radius: 5px;
+	border: 1px solid var(--border-color);
+}
+
+pre {
+	border-radius: 5px;
+	border: 1px solid var(--border-color);
+
+	line-height: 1.4;
+	overflow-x: auto;
+	padding: 1em;
+}
+
+pre code {
+	background-color: transparent;
+	color: inherit;
+	font-size: 100%;
+	padding: 0;
+
+	border: 0;
+}
+
+pre {
+	font-family: var(--code-font);
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
+
+pre code[class*="language-"] {
+	-webkit-overflow-scrolling: touch;
+}

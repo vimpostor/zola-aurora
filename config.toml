@@ -1,0 +1,11 @@
+base_url = "https://localhost:1111"
+compile_sass = true
+build_search_index = true
+generate_feed = true
+minify_html = true
+
+title = "My blog"
+
+[markdown]
+highlight_code = true
+highlight_theme = "ayu-dark"
