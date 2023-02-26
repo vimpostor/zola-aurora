@@ -12,6 +12,8 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 
 ## Installation
 
+In the root of your repository (created with `zola init`) run:
+
 ```bash
 git submodule add https://github.com/vimpostor/zola-aurora themes/zola-aurora
 ```
