@@ -6,7 +6,8 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 
 - Minimalistic
 - **NO** JavaScript
-- Automatic dark mode (based on system-wide preference)
+- **NO** tracking or analytics
+- Automatic dark mode support (based on system-wide preference)
 - Pagination
 
 ## Installation
