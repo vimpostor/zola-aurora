@@ -41,6 +41,15 @@ a:hover {
 	color: var(--hover-color);
 }
 
+.zola-anchor {
+	border-bottom: unset;
+}
+
+.zola-anchor:hover {
+	background-color: unset;
+	color: unset;
+}
+
 time {
 	color: grey;
 }
