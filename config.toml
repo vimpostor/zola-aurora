@@ -14,4 +14,6 @@ highlight_theme = "ayu-dark"
 [extra]
 socials = [
 	{ name = "Github", url = "https://github.com" },
+	{ name = "Gitlab", url = "https://gitlab.com" },
 ]
+license = { name = "CC-BY-SA-4.0", url = "https://creativecommons.org/licenses/by-sa/4.0/" }
