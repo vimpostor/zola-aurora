@@ -5,6 +5,7 @@ generate_feed = true
 minify_html = true
 
 title = "My blog"
+description = "A dummy blog"
 
 [markdown]
 highlight_code = true
