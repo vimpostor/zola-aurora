@@ -1,0 +1,16 @@
+{% extends "page.html" %}
+
+{% block main_content %}
+<div>
+	<ul class="tags">
+		{% for tag in terms %}
+		<li>
+			<a href="{{ tag.permalink | safe }}">
+				{{ tag.name }} ({{ tag.pages | length }} post{{ tag.pages | length | pluralize }})
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+
+{% endblock main_content %}

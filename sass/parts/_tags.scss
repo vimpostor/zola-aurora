@@ -10,3 +10,7 @@
 	color: var(--hover_color);
 	background-color: var(--primary-color);
 }
+
+.tags h1::before {
+	content: "🏷 ";
+}

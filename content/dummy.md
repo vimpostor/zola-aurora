@@ -2,6 +2,9 @@
 title = "Dummy content"
 description = "This is a short article to showcase this theme."
 date = 2023-02-26
+
+[taxonomies]
+tags = ["dummy", "demo"]
 +++
 
 # Dummy
