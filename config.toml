@@ -14,6 +14,9 @@ highlight_code = true
 highlight_theme = "ayu-dark"
 
 [extra]
+menu = [
+	{ name = "Tags", url = "/tags" },
+]
 socials = [
 	{ name = "Github", url = "https://github.com" },
 	{ name = "Gitlab", url = "https://gitlab.com" },
