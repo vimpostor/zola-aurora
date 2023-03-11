@@ -15,6 +15,7 @@ highlight_theme = "ayu-dark"
 
 [extra]
 menu = [
+	{ name = "About", url = "/about" },
 	{ name = "Tags", url = "/tags" },
 ]
 socials = [
