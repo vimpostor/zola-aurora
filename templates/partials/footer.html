@@ -1,6 +1,12 @@
 <footer>
 	{%- for social in config.extra.socials %}
-	<a class="soc" href={{ social.url }}>{{ social.name }}</a>
+	<a class="soc" href={{ social.url }}>
+		{% if social.icon and config.extra.icons_path %}
+		{{ load_data(path=config.extra.icons_path ~ "/" ~ social.icon ~ ".svg") | safe }}
+		{% else %}
+		{{ social.name }}
+		{% endif %}
+	</a>
 	{% endfor -%}
 	{%- if config.extra.license %}
 	<div class="lic">
