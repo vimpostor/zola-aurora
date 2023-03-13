@@ -1,8 +1,8 @@
 <footer>
 	{%- for social in config.extra.socials %}
 	<a class="soc" href={{ social.url }}>
-		{% if social.icon and config.extra.icons_path %}
-		{{ load_data(path=config.extra.icons_path ~ "/" ~ social.icon ~ ".svg") | safe }}
+		{% if social.icon %}
+		{{ post_macros::icon(name=social.icon) }}
 		{% else %}
 		{{ social.name }}
 		{% endif %}

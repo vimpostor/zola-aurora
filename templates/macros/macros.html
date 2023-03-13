@@ -168,3 +168,9 @@
 	{% endfor -%}
 	</div>
 {% endmacro cards_posts %}
+
+{% macro icon(name) %}
+{% if config.extra.icons_path %}
+{{ load_data(path=config.extra.icons_path ~ "/" ~ name ~ ".svg") | safe }}
+{% endif %}
+{% endmacro icon %}
