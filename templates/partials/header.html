@@ -24,7 +24,7 @@
 
 	{# Favicon #}
 	{% if config.extra.favicon %}
-		<link rel="icon" type="image/png" href={{ config.extra.favicon }} />
+	<link rel="icon" href="data:image/svg+xml;base64,{{ post_macros::icon(name=config.extra.favicon) | base64_encode }}">
 	{% endif %}
 
 	{# Fonts #}
