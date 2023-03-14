@@ -8,6 +8,8 @@
 @import "parts/tags.scss";
 
 :root {
+	--primary-color: #FF8F00;
+	--hover-color: white;
 	/* Used for: block comment, hr, ... */
 	--border-color: var(--bg-1);
 
@@ -58,9 +60,6 @@ html {
 	--bg-0: #fff;
 	--bg-1: #f2f2f2;
 	--bg-2: #fefefe;
-
-	--primary-color: #FF8F00;
-	--hover-color: white;
 }
 
 // Dark theme
@@ -72,8 +71,5 @@ html {
 		--bg-0: #121212;
 		--bg-1: rgba(255, 255, 255, 5%);
 		--bg-2: rgba(23, 23, 23, 100%);
-
-		--primary-color: #FF8F00;
-		--hover-color: white;
 	}
 }
