@@ -1,3 +1,7 @@
+.tags {
+	margin-block-start: 0em;
+}
+
 .tags li::before {
 	content: "🏷 ";
 }
