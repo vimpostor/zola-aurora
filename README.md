@@ -9,6 +9,7 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 - **NO** tracking or analytics
 - Automatic dark mode support (based on system-wide preference)
 - Pagination
+- Tags
 - SVG icon theme support (including favicon)
 
 ## Installation
