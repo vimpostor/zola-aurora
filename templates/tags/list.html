@@ -5,9 +5,8 @@
 	<ul class="tags">
 		{% for tag in terms %}
 		<li>
-			<a href="{{ tag.permalink | safe }}">
-				{{ tag.name }} ({{ tag.pages | length }} post{{ tag.pages | length | pluralize }})
-			</a>
+			<a href="{{ tag.permalink | safe }}">{{ tag.name }}</a>
+			({{ tag.pages | length }} post{{ tag.pages | length | pluralize }})
 		</li>
 		{% endfor %}
 	</ul>
