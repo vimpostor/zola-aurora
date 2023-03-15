@@ -10,10 +10,11 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 - Automatic dark mode support (based on system-wide preference)
 - Pagination
 - Tags
-- SVG icon theme support (including favicon)
+- SVG favicon support
 - Various shortcodes
 	- SVG icons: `{{ icon(name=myname) }}`
 	- Asciinema: `{{ asciinema(id=myid) }}`
+	- Youtube: `{{ youtube(id=myid) }}`
 
 ## Installation
 

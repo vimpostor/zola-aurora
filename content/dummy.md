@@ -30,3 +30,7 @@ This theme supports a variety of shortcodes.
 ### Asciinema
 
 {{ asciinema(id=14) }}
+
+### Youtube
+
+{{ youtube(id="Z4C82eyhwgU") }}
