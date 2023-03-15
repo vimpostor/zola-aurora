@@ -21,3 +21,12 @@ export TEST="Hello world!"
 echo "$TEST" > /tmp/a.txt
 sleep 5 &disown
 ```
+
+## Shortcodes
+
+Shortcodes can be used to easily insert external content or content in general that cannot be expressed with Markdown.
+This theme supports a variety of shortcodes.
+
+### Asciinema
+
+{{ asciinema(id=14) }}
