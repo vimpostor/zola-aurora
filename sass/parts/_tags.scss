@@ -2,8 +2,8 @@
 	margin-block-start: 0em;
 }
 
-.tags li::before {
-	content: "🏷 ";
+ul.tags {
+	list-style-type: "🏷 ";
 }
 
 .tags a {
