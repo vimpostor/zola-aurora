@@ -28,7 +28,9 @@
 	{% endif %}
 
 	{# Fonts #}
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/iosevka@4.5.4/500.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Spline+Sans+Mono&display=swap" rel="stylesheet">
 
 	{# RSS #}
 	<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
