@@ -6,15 +6,6 @@ ul.tags {
 	list-style-type: "🏷 ";
 }
 
-.tags a {
-	border-bottom: 3px solid var(--primary-color);
-}
-
-.tags a:hover {
-	color: var(--hover_color);
-	background-color: var(--primary-color);
-}
-
 .tags h1::before {
 	content: "🏷 ";
 }
