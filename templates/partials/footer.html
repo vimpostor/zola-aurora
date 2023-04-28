@@ -8,13 +8,4 @@
 		{% endif %}
 	</a>
 	{% endfor -%}
-	{%- if config.extra.license %}
-	<div class="lic">
-		{%- if config.extra.license.name == "CC0-1.0" %}
-		Content in public domain under <a href={{ config.extra.license.url }}>{{ config.extra.license.name }}</a>
-		{% else %}
-		Content licensed under <a href={{ config.extra.license.url }}>{{ config.extra.license.name }}</a>
-		{% endif -%}
-	</div>
-	{% endif -%}
 </footer>
