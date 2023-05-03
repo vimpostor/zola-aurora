@@ -78,7 +78,8 @@
 		{% endif %}
 
 		{# Optional table of contents #}
-		{% if config.extra.toc | default(value=true) %}
+		{% set global_toc = config.extra.toc | default(value=true) %}
+		{% if page.extra.toc | default(value=global_toc) %}
 			{% if page.toc %}
 				<h1>Table of Contents</h1>
 				<ul>
