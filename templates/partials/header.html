@@ -24,7 +24,11 @@
 
 	{# Favicon #}
 	{% if config.extra.favicon %}
+	{% if config.extra.favicon_inline | default(value=true) -%}
 	<link rel="icon" href="data:image/svg+xml;base64,{{ load_data(path=config.extra.favicon) | base64_encode }}">
+	{% else %}
+	<link rel="icon" href="{{ config.extra.favicon | trim_start_matches(pat="static/") }}" type="image/svg+xml">
+	{% endif -%}
 	{% endif %}
 
 	{# Fonts #}
