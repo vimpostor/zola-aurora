@@ -2,17 +2,6 @@
 	color: var(--primary-color);
 }
 
-::-moz-selection {
-	background: var(--primary-color);
-	color: var(--hover-color);
-	text-shadow: none;
-}
-
-::selection {
-	background: var(--primary-color);
-	color: var(--hover-color);
-}
-
 p {
 	line-height: 1.5;
 }
