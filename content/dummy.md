@@ -10,7 +10,7 @@ tags = ["dummy", "demo"]
 # Dummy
 
 This is a dummy article. This article is meant to showcase the look and feel of this theme.
-It works completely without any JavaScript and automatically respects the system-wide dark mode setting.
+It works completely without any JavaScript and automatically respects the system-wide dark mode setting. 🥳
 
 ## Code blocks
 

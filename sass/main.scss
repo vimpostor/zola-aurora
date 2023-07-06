@@ -15,8 +15,8 @@
 	--border-color: var(--bg-1);
 
 	/* Fonts */
-	--text-font: 'Comfortaa';
-	--code-font: 'Spline Sans Mono';
+	--text-font: system-ui,sans-serif,ui-sans-serif,Roboto,Noto;
+	--code-font: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
 html {
