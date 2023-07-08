@@ -1,7 +1,7 @@
 {% macro list_posts(pages) %}
 	<ul>
 	{%- for page in pages %}
-		<section class="list-item">
+		<li class="list-item">
 			<h1 class="title">
 				<a href={{ page.permalink }}>{{page.title}}</a>
 			</h1>
@@ -22,7 +22,7 @@
 			</div>
 			<a class="readmore" href={{ page.permalink }}>Read more ⟶</a>
 			{% endif -%}
-		</section>
+		</li>
 
 	{% endfor -%}
 	</ul>
