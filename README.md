@@ -13,10 +13,10 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 - Tags
 - SVG favicon support
 - Various shortcodes
-	- SVG icons: `{{ icon(name=myname) }}`
-	- Asciinema: `{{ asciinema(id=myid) }}`
-	- Youtube: `{{ youtube(id=myid) }}`
-	- Video: `{{ video(url=myurl) }}`
+	- SVG icons: `{{ icon(name="myname") }}`
+	- Asciinema: `{{ asciinema(id="myid") }}`
+	- Youtube: `{{ youtube(id="myid") }}`
+	- Video: `{{ video(url="myurl") }}`
 
 ## Installation
 
