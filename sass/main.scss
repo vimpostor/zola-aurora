@@ -29,7 +29,7 @@ html {
 .content {
 	max-width: 944px;
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 10px;
 	word-wrap: break-word;
 	min-height: 90vh;
 	display: flex;
@@ -40,17 +40,26 @@ html {
 	html {
 		font-size: 16.5px;
 	}
+	.content {
+		padding: 0 14px;
+	}
 }
 
 @media all and (min-width:720px) {
 	html {
 		font-size: 17px;
 	}
+	.content {
+		padding: 0 20px;
+	}
 }
 
 @media all and (min-width:960px) {
 	html {
 		font-size: 18px;
+	}
+	.content {
+		padding: 0 24px;
 	}
 }
 
