@@ -74,3 +74,14 @@ h6::before {
 	color: var(--primary-color);
 	content: "###### ";
 }
+
+
+h1.card-title::before {
+	content: none;
+}
+
+li.title-list::marker {
+	color: var(--primary-color);
+	content: "# ";
+	font-size: 1.2rem;
+}

@@ -1,8 +1,8 @@
 {% macro list_posts(pages) %}
 	<ul>
 	{%- for page in pages %}
-		<li class="list-item">
-			<h1 class="title">
+		<li class="title-list">
+			<h1 class="card-title">
 				<a href={{ page.permalink }}>{{page.title}}</a>
 			</h1>
 
