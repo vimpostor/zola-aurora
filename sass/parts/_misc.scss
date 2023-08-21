@@ -43,10 +43,10 @@ time {
 	color: grey;
 }
 
-/* Remove post list padding */
+/* Reduce post list padding */
 @media screen and (max-width: 600px) {
 	.list>ul {
 		margin: 0;
-		padding: 0;
+		padding: 0 10px;
 	}
 }
