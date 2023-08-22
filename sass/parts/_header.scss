@@ -80,6 +80,10 @@ h1.card-title::before {
 	content: none;
 }
 
+li.title-list {
+	margin-left: 1em;
+}
+
 li.title-list::marker {
 	color: var(--primary-color);
 	content: "# ";
