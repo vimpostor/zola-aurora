@@ -17,9 +17,11 @@ It works completely without any JavaScript and automatically respects the system
 This section showcases code blocks.
 
 ```bash
-export TEST="Hello world!"
-echo "$TEST" > /tmp/a.txt
-sleep 5 &disown
+if true; then
+	export TEST="Hello world!"
+	echo "$TEST" > /tmp/a.txt
+	sleep 5 &disown
+fi
 ```
 
 ## Shortcodes
