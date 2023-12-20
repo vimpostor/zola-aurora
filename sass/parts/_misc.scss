@@ -25,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+.main a {
+	padding-bottom: 5px;
+}
+
 a:hover {
 	background-color: var(--primary-color);
 	color: var(--hover-color);
