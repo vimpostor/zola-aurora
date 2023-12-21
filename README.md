@@ -12,6 +12,7 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 - Pagination
 - Tags
 - SVG favicon support
+- Quotes
 - Various shortcodes
 	- SVG icons: `{{ icon(name="myname") }}`
 	- Asciinema: `{{ asciinema(id="myid") }}`

@@ -24,6 +24,14 @@ if true; then
 fi
 ```
 
+## Quotes
+
+This is a quote.
+
+{% quote(author="J.S. Bach") %}
+There's nothing remarkable about it. All one has to do is hit the right keys at the right time and the instrument plays itself.
+{% end %}
+
 ## Shortcodes
 
 Shortcodes can be used to easily insert external content or content in general that cannot be expressed with Markdown.
