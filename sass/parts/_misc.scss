@@ -13,10 +13,16 @@ hr {
 }
 
 blockquote {
-	border-left: 3px solid var(--border-color);
-	color: #737373;
+	border-left: 3px solid var(--primary-color);
 	margin: 0;
 	padding-left: 1em;
+	width: 90%;
+	font-style: italic;
+}
+
+cite {
+	display: block;
+	text-align: right;
 }
 
 a {
