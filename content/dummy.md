@@ -32,6 +32,11 @@ This is a quote.
 There's nothing remarkable about it. All one has to do is hit the right keys at the right time and the instrument plays itself.
 {% end %}
 
+The next quote does not have author information.
+{% quote() %}
+For since the fabric of the universe is most perfect and the work of a most wise creator, nothing at all takes place in the universe in which some rule of the maximum or minimum does not appear.
+{% end %}
+
 ## Shortcodes
 
 Shortcodes can be used to easily insert external content or content in general that cannot be expressed with Markdown.
