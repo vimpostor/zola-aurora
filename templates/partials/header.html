@@ -34,5 +34,9 @@
 	{# RSS #}
 	<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
 
+	{% if config.extra.css_inline | default(value=false) -%}
+	<style>{{load_data(path="public/main.css") | safe }}</style>
+	{% else %}
 	<link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
+	{% endif %}
 </head>
