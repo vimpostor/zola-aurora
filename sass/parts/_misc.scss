@@ -18,6 +18,31 @@ blockquote {
 	padding-left: 0.6em;
 	width: 90%;
 	font-style: italic;
+	position: relative;
+}
+
+blockquote::before {
+	content: "";
+	background-color: var(--bg-0);
+	position: absolute;
+	top: 50%;
+	left: -4px;
+	height: 2em;
+	width: 5px;
+	margin-top: -1em;
+}
+
+blockquote::after {
+	content: "\201C";
+	color: var(--primary-color);
+	position: absolute;
+	font-size: 40px;
+	top: 50%;
+	left: -0.6em;
+	text-align: center;
+	width: 1em;
+	line-height: 1em;
+	margin-top: -0.3em;
 }
 
 cite {
