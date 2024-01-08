@@ -1,5 +1,5 @@
-.primary-color {
-	color: var(--primary-color);
+.accent-color {
+	color: var(--accent-color);
 }
 
 p {
@@ -13,7 +13,7 @@ hr {
 }
 
 a {
-	border-bottom: 3px solid var(--primary-color);
+	border-bottom: 3px solid var(--accent-color);
 	color: inherit;
 	text-decoration: none;
 }
@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-	background-color: var(--primary-color);
+	background-color: var(--accent-color);
 	color: var(--hover-color);
 }
 
