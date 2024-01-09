@@ -48,32 +48,32 @@ h6 {
 }
 
 h1::before {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "# ";
 }
 
 h2::before {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "## ";
 }
 
 h3::before {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "### ";
 }
 
 h4::before {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "#### ";
 }
 
 h5::before {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "##### ";
 }
 
 h6::before {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "###### ";
 }
 
@@ -87,7 +87,7 @@ li.title-list {
 }
 
 li.title-list::marker {
-	color: var(--accent-color);
+	color: var(--primary-color);
 	content: "# ";
 	font-size: 1.2rem;
 }
