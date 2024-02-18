@@ -1,0 +1,15 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: {{ get_url(path="sitemap.xml") }}
+
+
+# https://darkvisitors.com/
+User-agent: anthropic-ai
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: omgili
+Disallow: /
