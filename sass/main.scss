@@ -18,6 +18,14 @@
 	/* Fonts */
 	--text-font: system-ui,sans-serif,ui-sans-serif,Roboto,Noto;
 	--code-font: ui-monospace,'Cascadia Code','Source Code Pro',Menlo,Consolas,'DejaVu Sans Mono',monospace;
+
+	// Auto dark-mode
+	color-scheme: light dark;
+	--text-0: light-dark(rgba(0, 0, 0, 87%), rgba(255, 255, 255, 87%));
+	--text-1: light-dark(rgba(0, 0, 0, 66%), rgba(255, 255, 255, 60%));
+	--bg-0: light-dark(#fff, #121212);
+	--bg-1: light-dark(#f2f2f2, rgba(255, 255, 255, 5%));
+	--bg-2: light-dark(#fefefe, rgba(23, 23, 23, 100%));
 }
 
 html {
@@ -61,28 +69,5 @@ html {
 	}
 	.content {
 		padding: 0 24px;
-	}
-}
-
-// Auto dark-mode
-// Light theme
-:root {
-	--text-0: rgba(0, 0, 0, 87%);
-	--text-1: rgba(0, 0, 0, 66%);
-
-	--bg-0: #fff;
-	--bg-1: #f2f2f2;
-	--bg-2: #fefefe;
-}
-
-// Dark theme
-@media (prefers-color-scheme: dark) {
-	:root {
-		--text-0: rgba(255, 255, 255, 87%);
-		--text-1: rgba(255, 255, 255, 60%);
-
-		--bg-0: #121212;
-		--bg-1: rgba(255, 255, 255, 5%);
-		--bg-2: rgba(23, 23, 23, 100%);
 	}
 }
