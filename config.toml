@@ -11,9 +11,8 @@ taxonomies = [
 	{ name = "tags", feed = true },
 ]
 
-[markdown]
-highlight_code = true
-highlight_theme = "ayu-dark"
+[markdown.highlighting]
+theme = "ayu-dark"
 
 [extra]
 menu = [
