@@ -12,7 +12,8 @@ taxonomies = [
 ]
 
 [markdown.highlighting]
-theme = "ayu-dark"
+light_theme = "gruvbox-light-medium"
+dark_theme = "gruvbox-dark-medium"
 
 [extra]
 menu = [
