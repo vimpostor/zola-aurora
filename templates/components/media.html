@@ -1,4 +1,4 @@
-{% component media.icon(name: string) %}
+{% component media.icon(name: string, config: map) %}
 {% if config.extra.icons_path %}
 {{ load_data(path=config.extra.icons_path ~ "/" ~ name ~ ".svg") | safe }}
 {% endif %}
