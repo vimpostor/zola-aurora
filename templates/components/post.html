@@ -1,0 +1,116 @@
+{% component post.list_post(page: map) %}
+<li class="title-list">
+	<h1 class="post-title">
+		<a href={{ page.permalink }}>{{page.title}}</a>
+	</h1>
+
+	<div class="meta">
+		{%- if page.date %}
+			<time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+		{% endif -%}
+	</div>
+
+	{%- if page.description or page.summary %}
+	<div class="description">
+		{% if page.description %}
+			{{ page.description }}
+		{% elif page.summary %}
+			{{ page.summary | safe }}&hellip;
+		{% endif %}
+	</div>
+	<a class="readmore" href={{ page.permalink }}>Read more ⟶</a>
+	{% endif -%}
+</li>
+{% endcomponent post.list_post %}
+
+{% component post.list_posts(pages: array) %}
+<ul>
+	{%- for page in pages %}
+		{{<post.list_post page={page} />}}
+	{% endfor -%}
+</ul>
+{% endcomponent post.list_posts %}
+
+{% component post.page_header(title: string) %}
+<div class="page-header">
+	{{ title }}<span class="primary-color" style="font-size: 1.6em">.</span>
+</div>
+{% endcomponent post.page_header %}
+
+{% component post.content(page: map, config: map) %}
+<main>
+	<article>
+		<div class="title">
+			{#<h1 class="title">{{ page.title }}</h1>#}
+			{{<post.page_header title={page.title} /> }}
+
+				<div class="meta">
+					{% if page.date %}
+						Posted on <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+					{% endif %}
+				</div>
+		</div>
+
+		{% if page.extra.tldr %}
+			<div class="tldr">
+				<strong>tl;dr:</strong>
+				{{ page.extra.tldr }}
+			</div>
+		{% endif %}
+
+		{# Optional table of contents #}
+		{% set global_toc = config.extra.toc | default(value=true) %}
+		{% if page.extra.toc | default(value=global_toc) %}
+			{% if page.toc %}
+				<h1>Table of Contents</h1>
+				<ul>
+				{% for h1 in page.toc %}
+					<li>
+						<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+						{% if h1.children %}
+							<ul>
+								{% for h2 in h1.children %}
+									<li>
+										<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+									</li>
+
+									{% if h2.children %}
+									<ul>
+										{% for h3 in h2.children %}
+											<li>
+												<a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+											</li>
+										{% endfor %}
+									</ul>
+									{% endif %}
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+		{% endif %}
+
+		<section class="body">
+			{{ page.content | safe }}
+		</section>
+
+		{% if page.taxonomies and page.taxonomies.tags %}
+			<div class="post-tags">
+				<div class="meta">
+					Tagged with:
+				</div>
+				<nav>
+					<ul class="tags">
+						{% for tag in page.taxonomies.tags %}
+							<li><a href={{ get_taxonomy_url(kind='tags', name=tag) | safe }}>{{ tag }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		{% endif %}
+
+	</article>
+</main>
+{% endcomponent post.content %}

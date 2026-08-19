@@ -1,10 +1,8 @@
-{% import "macros/macros.html" as post_macros %}
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% if page.description %}
+	{% if page?.description %}
 		<meta name="description" content="{{ page.description }}" />
 	{% elif config.description %}
 		<meta name="description" content="{{ config.description }}" />
@@ -18,7 +16,8 @@
 	</title>
 	{% else %}
 	<title>
-		{{ page.title | default(value=config.title) | default(value="Post") }}
+		{%- set title = page?.title | default(value=config.title) | default(value="Post") -%}
+		{{ title }}
 	</title>
 	{% endif %}
 
@@ -27,7 +26,7 @@
 	{% if config.extra.favicon_inline | default(value=false) -%}
 	<link rel="icon" href="data:image/svg+xml;base64,{{ load_data(path=config.extra.favicon) | base64_encode }}">
 	{% else %}
-	<link rel="icon" href="{{ config.extra.favicon | trim_start_matches(pat="static") }}" type="image/svg+xml">
+	<link rel="icon" href="{{ config.extra.favicon | trim_start(pat="static") }}" type="image/svg+xml">
 	{% endif -%}
 	{% endif %}
 

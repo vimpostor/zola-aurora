@@ -1,0 +1,26 @@
+{% component asciinema(id: integer) %}
+<script src="https://asciinema.org/a/{{ id }}.js" id="asciicast-{{ id }}" async data-preload=0></script>
+{% endcomponent asciinema %}
+
+{% component icon(name: string) %}
+{{<media.icon name={name} />}}
+{% endcomponent icon %}
+
+{% component quote(author: string = "") %}
+<blockquote>
+<p>
+{{ body }} <br>
+{% if author -%}
+<cite>~ {{ author }}</cite>
+{% endif -%}
+</p>
+</blockquote>
+{% endcomponent quote %}
+
+{% component video(url: string) %}
+<video src="{{ url }}" data-canonical-src="{{ url }}" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
+{% endcomponent video %}
+
+{% component youtube(id: string) %}
+<iframe src="https://www.youtube-nocookie.com/embed/{{ id }}" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+{% endcomponent youtube %}

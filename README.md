@@ -14,10 +14,6 @@ A minimalistic theme for [Zola](https://www.getzola.org/).
 - SVG favicon support
 - Quotes
 - Various shortcodes
-	- SVG icons: `{{ icon(name="myname") }}`
-	- Asciinema: `{{ asciinema(id="myid") }}`
-	- Youtube: `{{ youtube(id="myid") }}`
-	- Video: `{{ video(url="myurl") }}`
 
 ## Installation
 

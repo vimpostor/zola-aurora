@@ -28,14 +28,14 @@ fi
 
 This is a quote.
 
-{% quote(author="J.S. Bach") %}
+{% <quote author="J.S. Bach"> %}
 There's nothing remarkable about it. All one has to do is hit the right keys at the right time and the instrument plays itself.
-{% end %}
+{% </quote> %}
 
 The next quote does not have author information.
-{% quote() %}
+{% <quote> %}
 For since the fabric of the universe is most perfect and the work of a most wise creator, nothing at all takes place in the universe in which some rule of the maximum or minimum does not appear.
-{% end %}
+{% </quote> %}
 
 ## Shortcodes
 
@@ -44,12 +44,12 @@ This theme supports a variety of shortcodes.
 
 ### Asciinema
 
-{{ asciinema(id=14) }}
+{% <asciinema id={14}> %}{% </asciinema> %}
 
 ### Youtube
 
-{{ youtube(id="Z4C82eyhwgU") }}
+{% <youtube id="Z4C82eyhwgU"> %}{% </youtube> %}
 
 ### Video
 
-{{ video(url="https://user-images.githubusercontent.com/21310755/164289278-6368d615-e363-4185-a7c1-0f79ae3bf7b1.mov") }}
+{% <video url="https://user-images.githubusercontent.com/21310755/164289278-6368d615-e363-4185-a7c1-0f79ae3bf7b1.mov"> %}{% </video> %}

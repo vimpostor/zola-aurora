@@ -2,7 +2,7 @@
 	{%- for social in config.extra.socials %}
 	<a class="soc" href={{ social.url }} aria-label="{{ social.icon | default(value=social.name) }}">
 		{% if social.icon %}
-		{{ post_macros::icon(name=social.icon) }}
+		{{<media.icon name={social.icon} />}}
 		{% else %}
 		{{ social.name }}
 		{% endif %}
